@@ -1,0 +1,9 @@
+# Job Example
+name: must run on custom runner
+on: push
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+      - run: echo 'hello cloud gurus'
+      - run: echo $HOSTNAME
